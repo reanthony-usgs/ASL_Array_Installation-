@@ -32,12 +32,7 @@ for sta in stas:
     else:
         net, loc = 'GS', '00'
     
-    # Wrong dataless at ALQ1 - fix manually     
-    if sta == 'ALQ1':
-        lats.append(34.94239)
-        lons.append(-106.4579)
-        elevs.append(1850.)
-        
+
     else:
 
         # read in the dataless for each station as an inventory object    

@@ -150,6 +150,7 @@ def getangles(net, sta, loc, stime, etime, debug = False, plot=False):
                 print('Here is the signal:' + str(signal))
                 print(st)
                 print('Here is the SNR:' + str(signal/noise))
+            st.sort(reverse=True)
             azies, inces, aziesE, incesE = particle_motion_odr(st)
             if debug:
                 print('Here is the azies: ' + str(azies) + ' +/-' + str(aziesE))
